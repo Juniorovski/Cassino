@@ -35,19 +35,19 @@ function giro() {
         const valor = parseFloat(amount.innerText.replace("R$", ""));
         if (element1 === "moeda" && element2 === "moeda" && element3 === "moeda") {
             const win = 30;
-            document.getElementById("message").innerText = "Você ganhou!" +`R$${win.toFixed(2)}`;
+            document.getElementById("message").innerText = "Você ganhou! " +` R$${win.toFixed(2)}`;
             document.getElementById("message").style.color = "green";
             novoSaldo = valor + 30; // Adiciona R$30 ao saldo
         }
         if (element1 === "maca" && element2 === "maca" && element3 === "maca") {
             const win = 10;
-            document.getElementById("message").innerText = "Você ganhou!" +`R$${win.toFixed(2)}`;
+            document.getElementById("message").innerText = "Você ganhou! " +` R$${win.toFixed(2)}`;
             document.getElementById("message").style.color = "green";
             novoSaldo = valor + 10; // Adiciona R$10 ao saldo
         }
         if (element1 === "pera" && element2 === "pera" && element3 === "pera") {
             const win = 10;
-            document.getElementById("message").innerText = "Você ganhou!" +`R$ ${win.toFixed(2)}`;
+            document.getElementById("message").innerText = "Você ganhou! " + ` R$ ${win.toFixed(2)}`;
             document.getElementById("message").style.color = "green";
             novoSaldo = valor + 10; // Adiciona R$10 ao saldo
         }
