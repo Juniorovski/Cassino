@@ -2,6 +2,15 @@ const btn_Giro = document.getElementById("btn-girar");
 
 
 function giro() {
+         
+    const amount = document.getElementById("amount");
+    const valor = parseFloat(amount.innerText.replace("R$", ""));
+    if (valor <= 0) {
+        console.log("Saldo insuficiente! Adicione mais saldo para continuar jogando.");
+        document.getElementById("message").innerText = "Saldo insuficiente! Adicione mais saldo para continuar jogando.";
+        document.getElementById("message").style.color = "red";
+        return; // Encerra a função
+    }
 
     const frutas = ["maca", "pera", "moeda"];
     const imagens = {
